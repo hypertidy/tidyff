@@ -179,7 +179,7 @@ b0_ff <- ff(filename = file0, vmode = "single", dim = dim(b0), readonly = TRUE  
 
 ```{r}
 
-library(ffraster)
+library(tidyff)
 ff_b <- ff_object(brick(file0))
 ff::as.ram(ff_b)
 

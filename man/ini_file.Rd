@@ -25,6 +25,6 @@ Read the configuration file in raw list form, you can
 use either the filename (.grd) or a raster object.
 }
 \examples{
-f <- system.file("extdata", "raster", "sst.grd", package  = "ffraster")
+f <- system.file("extdata", "raster", "sst.grd", package  = "tidyff")
 ini_file(f)
 }

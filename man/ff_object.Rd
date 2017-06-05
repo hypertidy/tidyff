@@ -35,7 +35,7 @@ for raster and for ff in this context always keeps degenerate singletons. Please
 get in touch if this causes you problems.
 }
 \examples{
-f <- system.file("extdata", "raster", "sst.grd", package  = "ffraster")
+f <- system.file("extdata", "raster", "sst.grd", package  = "tidyff")
 ff_object(raster::brick(f))
 if (interactive()) {
   arr <- ff_object(f, filename = "afile.grd")

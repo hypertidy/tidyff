@@ -1,4 +1,4 @@
 library(testthat)
-library(ffraster)
+library(tidyff)
 
-test_check("ffraster")
+test_check("tidyff")

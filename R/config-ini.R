@@ -99,7 +99,7 @@ ff_type.raster_ini <- function(x, ...) {
 #' @export
 #'
 #' @examples
-#' f <- system.file("extdata", "raster", "sst.grd", package  = "ffraster")
+#' f <- system.file("extdata", "raster", "sst.grd", package  = "tidyff")
 #' ini_file(f)
 ini_file <- function(x) {
   x <- UseMethod("ini_file")

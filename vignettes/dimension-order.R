@@ -83,7 +83,7 @@ identical(digest::digest(rb(file0)),
 
 ## ------------------------------------------------------------------------
 
-library(ffraster)
+library(tidyff)
 ff_b <- ff_object(brick(file0))
 ff::as.ram(ff_b)
 

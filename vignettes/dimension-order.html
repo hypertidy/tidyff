@@ -12,7 +12,7 @@
 
 <meta name="author" content="Michael D. Sumner" />
 
-<meta name="date" content="2017-06-04" />
+<meta name="date" content="2017-06-05" />
 
 <title>Grids and dimension order in R</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Grids and dimension order in R</h1>
 <h4 class="author"><em>Michael D. Sumner</em></h4>
-<h4 class="date"><em>2017-06-04</em></h4>
+<h4 class="date"><em>2017-06-05</em></h4>
 
 
 
@@ -239,7 +239,7 @@ rb &lt;-<span class="st"> </span>function(x) {
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## something is wrong...
 <span class="kw">library</span>(ff)
 b0_ff &lt;-<span class="st"> </span><span class="kw">ff</span>(<span class="dt">filename =</span> file0, <span class="dt">vmode =</span> <span class="st">&quot;single&quot;</span>, <span class="dt">dim =</span> <span class="kw">dim</span>(b0), <span class="dt">readonly =</span> <span class="ot">TRUE</span>  )</code></pre></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ffraster)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyff)
 ff_b &lt;-<span class="st"> </span><span class="kw">ff_object</span>(<span class="kw">brick</span>(file0))
 ff::<span class="kw">as.ram</span>(ff_b)</code></pre></div>
 <pre><code>## , , 1

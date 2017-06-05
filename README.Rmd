@@ -6,10 +6,9 @@ output:
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
-[![Travis-CI Build Status](https://travis-ci.org/mdsumner/ffraster.svg?branch=master)](https://travis-ci.org/mdsumner/ffraster)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/mdsumner/ffraster?branch=master&svg=true)](https://ci.appveyor.com/project/mdsumner/ffraster)
-[![Coverage Status](https://img.shields.io/codecov/c/github/mdsumner/ffraster/master.svg)](https://codecov.io/github/mdsumner/ffraster?branch=master)
-
+![Travis-CI Build Status](https://travis-ci.org/r-gris/tidyff.svg?branch=master)](https://travis-ci.org/r-gris/tidyff)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/r-gris/tidyff?branch=master&svg=true)](https://ci.appveyor.com/project/r-gris/tidyff)
+[![Coverage Status](https://img.shields.io/codecov/c/github/r-gris/tidyff/master.svg)](https://codecov.io/github/r-gris/tidyff?branch=master)
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
@@ -20,14 +19,14 @@ knitr::opts_chunk$set(
 ```
 
 
-ffraster allows loading a file-backed raster as an `ff` object. 
+tidyff allows loading a file-backed raster as an `ff` object. 
 
 ```{r, eval= FALSE}
 library(raster)
 
 b <_ brick("/some/huge/brick.grd")
 
-library(ffraster)
+library(tidyff)
 ff_object(b)
 
 ```

@@ -1,7 +1,7 @@
 library(testthat)
-context("ffraster")
+context("tidyff")
 
-library(ffraster)
+library(tidyff)
 dm <- c(25, 43, 88)
 a <- array(1:(prod(dm)), dm)
 
@@ -16,5 +16,5 @@ test_that("ffrarr works", {
 # b <- brick(a)
 # fn <- rasterTmpFile()
 # dt <- "FLT8S"
-# ffraster:::.writeGRD(b, dataType = dt, filename = fn)
+# tidyff:::.writeGRD(b, dataType = dt, filename = fn)
 # ar <- ffrarr(dim(b), mode = dt, filename = fn)

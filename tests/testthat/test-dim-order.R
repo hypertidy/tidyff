@@ -1,6 +1,6 @@
 context("dim order")
 
-library(ffraster)
+library(tidyff)
 library(raster)
 r <- raster(matrix(1:12, 3))
 
@@ -9,14 +9,14 @@ bil <- writeRaster(brick(r, r * 5), rasterTmpFile(), bandorder = "BIL")
 bip <- writeRaster(brick(r, r * 5), rasterTmpFile(), bandorder = "BIP")
 
 nn <- ncell(bsq) * nlayers(bsq)
-bsq_raw <-  readBin(ffraster:::gri_filename(bsq), "numeric", n = nn)
+bsq_raw <-  readBin(tidyff:::gri_filename(bsq), "numeric", n = nn)
 bsq_match <- c(1, 4, 7, 10, 2, 5, 8, 11, 3, 6, 9, 12, 5, 20, 35, 50, 10, 25, 
                40, 55, 15, 30, 45, 60)
 
-bil_raw <-  readBin(ffraster:::gri_filename(bil), "numeric", n = nn)
+bil_raw <-  readBin(tidyff:::gri_filename(bil), "numeric", n = nn)
 bil_match <- c(1, 4, 7, 10, 5, 20, 35, 50, 2, 5, 8, 11, 10, 25, 40, 55, 3, 
 6, 9, 12, 15, 30, 45, 60)
-bip_raw <- readBin(ffraster:::gri_filename(bip), "numeric", n = nn)
+bip_raw <- readBin(tidyff:::gri_filename(bip), "numeric", n = nn)
 bip_match <- c(1, 5, 4, 20, 7, 35, 10, 50, 2, 10, 5, 25, 8, 40, 11, 55, 3, 
               15, 6, 30, 9, 45, 12, 60)
 

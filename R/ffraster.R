@@ -16,7 +16,7 @@
 #' @export
 #'
 #' @examples
-#' f <- system.file("extdata", "raster", "sst.grd", package  = "ffraster")
+#' f <- system.file("extdata", "raster", "sst.grd", package  = "tidyff")
 #' ff_object(raster::brick(f))
 #' if (interactive()) {
 #'   arr <- ff_object(f, filename = "afile.grd")
@@ -61,29 +61,7 @@ ff_object.character <- function(x, readonly = TRUE, filename = NULL, ...)  {
   ff_object(raster::brick(x, filename = filename))
 }
 
-
-#' ffraster
-#' 
-#' Build a ff array to be used as a raster. 
-##
-#' For mapping between raster and ff types, see \code{\link[ff]{vmode}} and \code{\link[raster]{dataType}}
-##
-#' @param dim dimensions in Raster order (nrow, ncol, nlayer)
-#' @param mode ff data mode see details
-#' @param readonly open in readonly mode (TRUE is default)
-#' @param filename file name as per \code{\link{writeRaster}}
-#' @importFrom ff ff
-#' @importFrom raster raster
-#' @return ff
-#' @export
-#' @examples
-#' mat <- volcano
-#' library(raster)
-#' b <- brick(raster(mat), raster(mat), raster(mat))
-#' fn <- rasterTmpFile()
-#' dt <- "byte"
-#' ffraster:::.writeGRD(b, dataType = dt, filename = fn)
-#' a <- ffrarr(dim(b), mode = dt, filename = fn, readonly = FALSE)
+## old ffraster
 ffrarr <- function(dim, mode, filename, readonly = TRUE) {
     # set up data dimensions and order
   vdim <- dim
